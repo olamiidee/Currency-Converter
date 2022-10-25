@@ -23,7 +23,7 @@ request.onreadystatechange = function (response) {
       });
 
       // Update the placeholder text.
-      input.placeholder = "e.g. datalist";
+      input.placeholder = "USD";
     } else {
       // An error occured :(
       input.placeholder = "Couldn't load datalist options :(";
@@ -41,3 +41,23 @@ request.open(
   true
 );
 request.send();
+
+// input.addEventListener("click", from);
+// function from() {
+//   const options = {
+//     method: "GET",
+//     headers: {
+//       "X-RapidAPI-Key": "SIGN-UP-FOR-KEY",
+//       "X-RapidAPI-Host":
+//         "currency-conversion-and-exchange-rates.p.rapidapi.com",
+//     },
+//   };
+
+//   fetch(
+//     "https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=USD&to=EUR&amount=750",
+//     options
+//   )
+//     .then((response) => response.json())
+//     .then((response) => console.log(response))
+//     .catch((err) => console.error(err));
+// }
