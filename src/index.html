@@ -27,41 +27,41 @@
           <p class="text-center font-light">Exchange Rate</p>
           <div class="text-center text-2xl font-bold pt-3 pb-8">$361.74</div>
           <div class="w-[70%] space-y-2 mx-auto">
+            <!-- Amount -->
             <div>
               <label for="amount" class="text-xs">Amount</label> <br />
               <input
-                class="border-2 border-gray-200 outline-none w-full py-1 pl-2 text-sm focus:border-sky-600"
+                class="border-2 border-gray-200 outline-none w-full py-1 px-2 text-sm focus:border-sky-600"
                 id="amount"
                 type="number"
                 min="0"
               />
             </div>
 
-            <div class="flex justify-between items-center">
-              <!-- From Input -->
+            <!-- From % To Section -->
+            <div class="flex justify-between items-center pb-4">
+              <!-- From -->
               <div>
                 <label for="from" class="text-xs">From</label>
                 <input
                   type="text"
-                  class="border-2 border-gray-200 outline-none w-full px-2"
+                  class="border-2 border-gray-200 focus:border-sky-600 outline-none w-full px-2 py-1"
                   id="from"
                 />
                 <datalist id="json.datalist"></datalist>
               </div>
 
               <!-- swap arrow icon -->
-
-              <div>
+              <div class="pt-6 px-2">
                 <i class="fa-sharp fa-solid fa-right-left"></i>
               </div>
 
-              <!-- To input -->
-
-              <div class="">
+              <!-- To -->
+              <div>
                 <label for="to" class="text-xs">To</label>
                 <input
                   type="text"
-                  class="border-2 border-gray-200 outline-none px-2 w-full"
+                  class="border-2 border-gray-200 focus:border-sky-600 outline-none px-2 py-1 w-full"
                   id="to"
                 />
                 <datalist id="json.datalist"></datalist>
@@ -69,7 +69,6 @@
             </div>
 
             <!-- Button -->
-
             <button
               class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-sky-600 hover:text-black"
             >
