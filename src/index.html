@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/44885d9653.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body class="w-full h-full bg-gray-300">
@@ -32,20 +36,40 @@
                 min="0"
               />
             </div>
-            <div></div>
 
-            <div class="flex justify-between">
+            <div class="flex justify-between items-center">
+              <!-- From Input -->
               <div>
                 <label for="from" class="text-xs">From</label>
-                <div></div>
+                <input
+                  type="text"
+                  class="border-2 border-gray-200 outline-none w-full px-2"
+                  id="from"
+                />
+                <datalist id="json.datalist"></datalist>
               </div>
+
+              <!-- swap arrow icon -->
+
               <div>
-                <img src="" alt="" />
+                <i class="fa-sharp fa-solid fa-right-left"></i>
               </div>
+
+              <!-- To input -->
+
               <div class="">
                 <label for="to" class="text-xs">To</label>
+                <input
+                  type="text"
+                  class="border-2 border-gray-200 outline-none px-2 w-full"
+                  id="to"
+                />
+                <datalist id="json.datalist"></datalist>
               </div>
             </div>
+
+            <!-- Button -->
+
             <button
               class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-sky-600 hover:text-black"
             >
