@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 body {
-  font-family: "Manrope", sans-serif;
-  background-color: ;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card {
+  box-shadow: 15px -15px (white);
 }

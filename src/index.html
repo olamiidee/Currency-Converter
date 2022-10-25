@@ -15,11 +15,11 @@
     <!-- Container -->
     <div class="flex justify-center items-center h-screen wrapper">
       <div class="w-[60%] md:w-[25%]">
-        <p class="text-xl font-bold text-center pb-5">
+        <p class="md:text-xl font-semibold text-center pb-5">
           Simple Currency Converter
         </p>
         <!-- Card Section-->
-        <div class="bg-white pt-8 pb-16 mx-auto card">
+        <div class="bg-white border-t-8 border-sky-600 pt-8 pb-16 mx-auto card">
           <p class="text-center font-light">Exchange Rate</p>
           <div class="text-center text-2xl font-bold pt-3 pb-8">$361.74</div>
           <div class="w-[70%] space-y-2 mx-auto">
@@ -33,21 +33,24 @@
               />
             </div>
             <div></div>
+
+            <div class="flex justify-between">
+              <div>
+                <label for="from" class="text-xs">From</label>
+                <div></div>
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div class="">
+                <label for="to" class="text-xs">To</label>
+              </div>
+            </div>
             <button
               class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-sky-600 hover:text-black"
             >
               Convert
             </button>
-            <div class="flex items justify-between">
-              <div>
-                <label for="from" class="text-xs">From</label>
-                <div></div>
-              </div>
-              <div></div>
-              <div class=>
-                <label for="to" class="text-xs">To</label>
-              </div>
-            </div>
           </div>
         </div>
       </div>
