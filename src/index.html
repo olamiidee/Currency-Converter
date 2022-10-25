@@ -25,17 +25,12 @@
         <!-- Card Section-->
         <div class="bg-white border-t-8 border-sky-600 pt-8 pb-16 mx-auto card">
           <p class="text-center font-light">Exchange Rate</p>
-          <div class="text-center text-2xl font-bold pt-3 pb-8">$361.74</div>
+          <div class="text-center text-2xl font-bold pt-3 pb-4">$361.74</div>
           <div class="w-[70%] space-y-2 mx-auto">
             <!-- Amount -->
             <div>
               <label for="amount" class="text-xs">Amount</label> <br />
-              <input
-                class="border-2 border-gray-200 outline-none w-full py-1 px-2 text-sm focus:border-sky-600"
-                id="amount"
-                type="number"
-                min="0"
-              />
+              <input class="from-to" id="amount" type="number" min="0" />
             </div>
 
             <!-- From % To Section -->
@@ -43,11 +38,7 @@
               <!-- From -->
               <div>
                 <label for="from" class="text-xs">From</label>
-                <input
-                  type="text"
-                  class="border-2 border-gray-200 focus:border-sky-600 outline-none w-full px-2 py-1"
-                  id="from"
-                />
+                <input type="text" class="from-to" id="from" />
                 <datalist id="json.datalist"></datalist>
               </div>
 
@@ -59,11 +50,7 @@
               <!-- To -->
               <div>
                 <label for="to" class="text-xs">To</label>
-                <input
-                  type="text"
-                  class="border-2 border-gray-200 focus:border-sky-600 outline-none px-2 py-1 w-full"
-                  id="to"
-                />
+                <input type="text" class="from-to" id="to" />
                 <datalist id="json.datalist"></datalist>
               </div>
             </div>

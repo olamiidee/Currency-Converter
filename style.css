@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .from-to {
+    @apply border-2 border-gray-200 focus:border-sky-600 outline-none px-2 w-full;
+  }
+}
+
 body {
 }
 
