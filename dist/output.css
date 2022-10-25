@@ -712,9 +712,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-body {
-}
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -725,7 +722,7 @@ input[type="number"] {
 }
 
 .card {
-  box-shadow: 15px -15px (white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hover\:border-2:hover {
