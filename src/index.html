@@ -30,17 +30,14 @@
             </div>
 
             <!-- From & To Section -->
-            <div class="flex justify-between items-center pb-4">
+            <div class="flex justify-between max-w-1/2 items-center pb-4">
               <!-- From -->
               <div>
                 <label for="from" class="text-xs">From</label>
-                <input
-                  type="text"
-                  class="from-to"
-                  id="from"
-                  list="json-datalist"
-                />
-                <datalist id="json-datalist"></datalist>
+                <div class="flex space-x-10 border border-gray-200">
+                  <img src="https://flagcdn.com/32x24/za.png" alt="" />
+                  <select id="json-datalist-from"></select>
+                </div>
               </div>
 
               <!-- swap arrow icon -->
@@ -49,21 +46,22 @@
               </div>
 
               <!-- To -->
-              <div>
+              <div class="space-y-6">
                 <label for="to" class="text-xs">To</label>
-                <input
-                  type="text"
-                  class="from-to"
-                  id="to"
-                  list="json-datalist"
-                />
-                <datalist id="json-datalist"></datalist>
+                <div class="flex space-x-10 border border-sky-500">
+                  <img
+                    src="https://flagcdn.com/32x24/za.png"
+                    id="img1"
+                    alt=""
+                  />
+                  <select id="json-datalist-to"></select>
+                </div>
               </div>
             </div>
 
             <!-- Button -->
             <button
-              class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-sky-600 hover:text-black"
+              class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-red-600 hover:text-black"
             >
               Convert
             </button>
@@ -71,6 +69,7 @@
         </div>
       </div>
     </div>
+    <script src="countries.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
