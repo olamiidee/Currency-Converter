@@ -35,14 +35,20 @@
               <div>
                 <label for="from" class="text-xs">From</label>
                 <div class="flex space-x-10 border border-gray-200">
-                  <img src="https://flagcdn.com/32x24/za.png" alt="" />
-                  <select id="json-datalist-from"></select>
+                  <img
+                    src="https://flagcdn.com/32x24/us.png"
+                    width="30"
+                    height="30"
+                    alt=""
+                    id="flag"
+                  />
+                  <select id="json-datalist"></select>
                 </div>
               </div>
 
               <!-- swap arrow icon -->
               <div class="pt-6 px-2">
-                <i class="fa-sharp fa-solid fa-right-left"></i>
+                <i id="switch" class="fa-sharp fa-solid fa-right-left"></i>
               </div>
 
               <!-- To -->
@@ -50,11 +56,13 @@
                 <label for="to" class="text-xs">To</label>
                 <div class="flex space-x-10 border border-sky-500">
                   <img
-                    src="https://flagcdn.com/32x24/za.png"
-                    id="img1"
+                    src="https://flagcdn.com/32x24/us.png"
+                    width="30"
+                    height="30"
+                    id="flag"
                     alt=""
                   />
-                  <select id="json-datalist-to"></select>
+                  <select id="json-datalist"></select>
                 </div>
               </div>
             </div>
@@ -70,6 +78,6 @@
       </div>
     </div>
     <script src="countries.js"></script>
-    <script src="app.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
