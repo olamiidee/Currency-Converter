@@ -51,6 +51,9 @@ function fetchCurrencies() {
     if (i > 0) countryCode2 = value;
     else countryCode1 = value;
   });
+  if (amount.value === "") {
+    alert("Pls input a number");
+  }
   let amt = amount.value;
   fetch(
     `https://api.exchangerate.host/convert?from=${countryCode1}&to=${countryCode2}&amount=${amt}`
