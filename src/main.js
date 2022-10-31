@@ -52,7 +52,8 @@ function fetchCurrencies() {
     else countryCode1 = value;
   });
   if (amount.value === "") {
-    alert("Pls input a number");
+    alert("Please input a number");
+    result.textContent = 0.0;
   }
   let amt = amount.value;
   fetch(

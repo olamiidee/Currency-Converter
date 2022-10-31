@@ -32,11 +32,11 @@
             </div>
 
             <!-- From & To Section -->
-            <div class="flex justify-between max-w-1/2 items-center pb-4">
+            <div class="flex justify-between items-center pb-4">
               <!-- From -->
               <div>
                 <label for="from" class="text-xs">From</label>
-                <div class="flex space-x-10 border border-gray-200 from">
+                <div class="flex border rounded overflow-hidden from">
                   <img
                     src="https://flagcdn.com/32x24/us.png"
                     width="30"
@@ -54,9 +54,11 @@
               </div>
 
               <!-- To -->
-              <div class="space-y-6">
+              <div class="">
                 <label for="to" class="text-xs">To</label>
-                <div class="flex space-x-10 border border-sky-500">
+                <div
+                  class="flex border border-gray-200 rounded overflow-hidden"
+                >
                   <img
                     src="https://flagcdn.com/32x24/us.png"
                     width="30"
@@ -71,7 +73,7 @@
 
             <!-- Button -->
             <button
-              class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase hover:bg-white hover:border-2 hover:border-red-600 hover:text-black"
+              class="text-white text-sm font-semibold bg-sky-600 w-full py-1 uppercase"
               id="convert"
             >
               Convert
